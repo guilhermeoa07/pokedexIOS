@@ -12,6 +12,10 @@
 		7950287521DFD2EE007BBF74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7950287321DFD2EE007BBF74 /* Main.storyboard */; };
 		7950287721DFD2F5007BBF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7950287621DFD2F5007BBF74 /* Assets.xcassets */; };
 		7950287A21DFD2F5007BBF74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7950287821DFD2F5007BBF74 /* LaunchScreen.storyboard */; };
+		79A00ED821E02A6200A9C645 /* PokedexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A00ED721E02A6200A9C645 /* PokedexModel.swift */; };
+		79A00EDA21E02B4000A9C645 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A00ED921E02B4000A9C645 /* PokemonModel.swift */; };
+		79A00EDC21E02CC700A9C645 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A00EDB21E02CC700A9C645 /* ServerError.swift */; };
+		79A00EDF21E0300300A9C645 /* ParserPokedex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A00EDE21E0300300A9C645 /* ParserPokedex.swift */; };
 		AACAED5E35FD744B844D3135 /* Pods_iDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA17BE114A30C7251CB454D /* Pods_iDex.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,10 @@
 		7950287621DFD2F5007BBF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7950287921DFD2F5007BBF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7950287B21DFD2F5007BBF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A00ED721E02A6200A9C645 /* PokedexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexModel.swift; sourceTree = "<group>"; };
+		79A00ED921E02B4000A9C645 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		79A00EDB21E02CC700A9C645 /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		79A00EDE21E0300300A9C645 /* ParserPokedex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserPokedex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,8 @@
 		7950286E21DFD2EE007BBF74 /* iDex */ = {
 			isa = PBXGroup;
 			children = (
+				79A00EDD21E02FD800A9C645 /* ViewModel */,
+				79A00ED621E02A2900A9C645 /* Models */,
 				7950286F21DFD2EE007BBF74 /* AppDelegate.swift */,
 				7950287121DFD2EE007BBF74 /* ViewController.swift */,
 				7950287321DFD2EE007BBF74 /* Main.storyboard */,
@@ -77,6 +87,24 @@
 				7950287B21DFD2F5007BBF74 /* Info.plist */,
 			);
 			path = iDex;
+			sourceTree = "<group>";
+		};
+		79A00ED621E02A2900A9C645 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79A00ED721E02A6200A9C645 /* PokedexModel.swift */,
+				79A00ED921E02B4000A9C645 /* PokemonModel.swift */,
+				79A00EDB21E02CC700A9C645 /* ServerError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79A00EDD21E02FD800A9C645 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79A00EDE21E0300300A9C645 /* ParserPokedex.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B5A640325C2B5AACE86778AD /* Pods */ = {
@@ -208,8 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A00EDC21E02CC700A9C645 /* ServerError.swift in Sources */,
 				7950287221DFD2EE007BBF74 /* ViewController.swift in Sources */,
+				79A00ED821E02A6200A9C645 /* PokedexModel.swift in Sources */,
+				79A00EDF21E0300300A9C645 /* ParserPokedex.swift in Sources */,
 				7950287021DFD2EE007BBF74 /* AppDelegate.swift in Sources */,
+				79A00EDA21E02B4000A9C645 /* PokemonModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
